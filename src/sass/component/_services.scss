@@ -1,0 +1,46 @@
+/*=============== SERVICES ===============*/
+.services {
+	&__container {
+		padding-top: 1rem;
+	}
+
+	&__data {
+		display: grid;
+		row-gap: 1rem;
+		background-color: var(--container-color);
+		box-shadow: 0 2px 6px hsla(var(--hue), 100%, 15%, 0.15);
+		padding: 2rem 1.5rem;
+		border-radius: 1rem;
+		text-align: center;
+
+		transform: translateY(3rem);
+		opacity: 0;
+
+		transition: transform 1s ease-out, opacity 1s ease-out;
+
+		&:nth-child(1) {
+			transition-delay: 0s;
+		}
+
+		&:nth-child(2) {
+			transition-delay: 0.4s;
+		}
+
+		&:nth-child(3) {
+			transition-delay: 0.8s;
+		}
+	}
+
+	&__img {
+		width: 135px;
+		justify-self: center;
+		margin-bottom: var(--mb-0-5);
+	}
+}
+
+.active-section {
+	.services__data {
+		opacity: 1;
+		transform: translate(0);
+	}
+}

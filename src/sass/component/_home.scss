@@ -1,0 +1,29 @@
+/*=============== HOME ===============*/
+.home {
+	&__container {
+		row-gap: 3rem;
+	}
+
+	&__title {
+		font-size: var(--biggest-font-size);
+		font-weight: var(--font-bold);
+		margin-bottom: var(--mb-0-75);
+	}
+
+	&__description {
+		margin-bottom: var(--mb-2);
+	}
+
+	svg {
+		transform: translateY(3rem);
+		opacity: 0;
+		transition: transform 1s ease-out, opacity 1s ease-out;
+	}
+}
+
+.active-section {
+	svg {
+		opacity: 1 !important;
+		transform: translate(0) !important;
+	}
+}

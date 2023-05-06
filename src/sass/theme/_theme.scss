@@ -1,0 +1,65 @@
+/*=========== THEME ===============*/
+
+/*=========== Variables Dark Theme ===============*/
+body.dark-theme {
+	--first-color-light: hsl(var(--hue), var(--sat), 75%);
+	--title-color: hsl(var(--hue), 4%, 95%);
+	--text-color: hsl(var(--hue), 4%, 80%);
+	--body-color: hsl(var(--hue), 8%, 13%);
+	--container-color: hsl(var(--hue), 8%, 16%);
+	--scroll-bar-color: hsl(var(--hue), 4%, 32%);
+	--scroll-thumb-color: hsl(var(--hue), 4%, 24%);
+}
+
+/*=========== Button Dark/Night ===============*/
+.change-theme {
+	position: absolute;
+	top: 2.2rem;
+	right: 1.5rem;
+	color: var(--title-color);
+	font-size: 1.8rem;
+	cursor: pointer;
+}
+
+.theme {
+	&__button {
+		position: absolute;
+		top: 2.2rem;
+		right: 1.5rem;
+
+		background: none;
+		outline: none;
+
+		width: 2rem;
+		height: 1rem;
+
+		border: 2px solid var(--title-color);
+		border-radius: 10rem;
+		padding: 0.2rem;
+
+		display: flex;
+		align-items: center;
+		justify-content: left;
+
+		cursor: pointer;
+	}
+
+	&__slider {
+		display: inline-block;
+		height: 0.5rem;
+		width: 0.5rem;
+		border-radius: 50%;
+		background-color: var(--title-color);
+		transition: 0.3s;
+	}
+}
+
+.toggle-theme {
+	.theme__slider {
+		transform: translateX(calc(100% + 50% + 0.1rem));
+	}
+}
+
+.dark-theme .footer {
+	background-color: var(--container-color);
+}

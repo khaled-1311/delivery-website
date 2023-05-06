@@ -1,0 +1,16 @@
+/*=============== ABOUT ===============*/
+.about {
+	&__container {
+		gap: 2.5rem;
+	}
+
+	&__data {
+		text-align: center;
+	}
+
+	svg {
+		transform: translateY(3rem);
+		opacity: 0;
+		transition: transform 1s ease-out, opacity 1s ease-out;
+	}
+}
