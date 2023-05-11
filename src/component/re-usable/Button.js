@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Button = props => {
 	const classes = `button ${props.className}`;
 	return (

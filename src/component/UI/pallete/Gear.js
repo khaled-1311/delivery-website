@@ -1,13 +1,19 @@
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import WebContext from '../../store/web-context';
-import '../../../sass/main.scss';
+import icons from '../../../img/icons.svg';
 
 const Gear = () => {
 	const ctx = useContext(WebContext);
 
 	return (
 		<div className="box-palette__gear" onClick={ctx.toggleSettingHandler}>
-			<i className="bx bx-cog"></i>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				viewBox="0 0 24 24"
+				width="24"
+				height="24">
+				<use href={`${icons}#gear`}></use>
+			</svg>
 		</div>
 	);
 };

@@ -1,6 +1,7 @@
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import WebContext from '../store/web-context';
-import '../../sass/main.scss';
+
+import icons from '../../img/icons.svg';
 
 const ToggleMenu = props => {
 	const ctx = useContext(WebContext);
@@ -10,7 +11,13 @@ const ToggleMenu = props => {
 			className="nav__toggle"
 			id="nav-toggle"
 			onClick={ctx.toggleMenuHandler}>
-			<i className="bx bx-grid-alt"></i>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				viewBox="0 0 24 24"
+				width="21.5"
+				height="21.5">
+				<use href={`${icons}#grid`}></use>
+			</svg>
 		</div>
 	);
 };

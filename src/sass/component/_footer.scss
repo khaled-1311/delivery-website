@@ -40,6 +40,10 @@
 		&-link {
 			font-size: 1.25rem;
 			color: var(--title-color);
+
+			svg {
+				fill: var(--title-color);
+			}
 		}
 	}
 

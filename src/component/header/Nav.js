@@ -1,7 +1,4 @@
-import React from 'react';
 import NavLink from './NavLink';
-import '../../sass/main.scss';
-
 import ToggleApperance from './ToggleApperance';
 
 const Nav = props => {

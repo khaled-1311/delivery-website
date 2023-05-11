@@ -1,5 +1,3 @@
-import React from 'react';
-
 import WebProvider from './component/store/webProvider';
 
 import Header from './component/header/Header';
@@ -8,6 +6,7 @@ import Footer from './component/footer/Footer';
 import ScrollTop from './component/UI/ScrollTop';
 import BoxPallete from './component/UI/pallete/BoxPallete';
 
+import './sass/main.scss';
 function App() {
 	return (
 		<WebProvider>

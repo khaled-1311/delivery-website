@@ -1,6 +1,3 @@
-import React from 'react';
-import '../../sass/main.scss';
-
 const NavLink = props => {
 	const linkClickHandler = () => {
 		const nav = document.getElementById('nav-menu');

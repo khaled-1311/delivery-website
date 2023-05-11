@@ -1,6 +1,6 @@
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import WebContext from '../../store/web-context';
-import '../../../sass/main.scss';
+
 import ColorList from './ColorList';
 import Gear from './Gear';
 

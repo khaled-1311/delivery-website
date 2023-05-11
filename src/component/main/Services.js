@@ -1,10 +1,7 @@
-import React from 'react';
 import Section from '../UI/Section';
 import Contaienr from '../UI/Container';
 import ServiceItem from './ServiceItem';
 import serviceData from '../../data/services.json';
-
-import '../../sass/main.scss';
 
 const Services = () => {
 	const serviceList = serviceData.map((item, i) => (

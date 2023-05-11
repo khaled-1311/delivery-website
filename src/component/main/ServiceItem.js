@@ -1,7 +1,6 @@
 import { Fragment } from 'react';
 import Svg from '../UI/Svg';
 import Link from '../re-usable/Link';
-import '../../sass/main.scss';
 
 const ServiceItem = props => {
 	const data = props.content;

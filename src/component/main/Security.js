@@ -1,10 +1,6 @@
-import React from 'react';
-
 import Section from '../UI/Section';
 import Contaienr from '../UI/Container';
 import Svg from '../UI/Svg';
-
-import '../../sass/main.scss';
 
 const Security = () => {
 	return (

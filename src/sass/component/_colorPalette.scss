@@ -1,6 +1,6 @@
 .box-palette {
 	position: fixed;
-	left: 1rem;
+	right: 1rem;
 	bottom: -20%;
 
 	transition: 0.4s;
@@ -18,8 +18,8 @@
 		cursor: pointer;
 		transition: 0.4s;
 
-		& > i {
-			color: var(--button-color);
+		& > svg {
+			fill: var(--button-color);
 			animation: animate-gear 5s infinite linear;
 		}
 
@@ -34,37 +34,43 @@
 		flex-direction: column;
 		align-items: center;
 		row-gap: 0.3rem;
+
+		margin-bottom: 0.5rem;
 		padding: 0.5rem 0;
 
-		& > div {
-			& > button {
-				position: relative;
+		opacity: 0;
+		visibility: hidden;
+		transform: translateY(0.5rem);
 
-				display: inline-flex;
-				justify-content: center;
-				align-items: center;
+		box-shadow: 0 2px 6px hsla(var(--hue), 100%, 15%, 0.15);
+		background-color: var(--container-color);
 
-				border: none;
-				outline: none;
-				background: none;
+		border-radius: 0.25rem;
+		transition: 0.5s;
 
+		& > div button {
+			position: relative;
+
+			display: inline-flex;
+			justify-content: center;
+			align-items: center;
+
+			border: none;
+			outline: none;
+			background: none;
+
+			border-radius: 50%;
+			padding: 0.25rem;
+
+			transition: outline-color 0.3s 0s;
+
+			cursor: pointer;
+
+			& > span {
+				display: inline-block;
+				width: 0.75rem;
+				height: 0.75rem;
 				border-radius: 50%;
-				padding: 0.25rem;
-
-				transform: translateY(0.5rem);
-				opacity: 0;
-				visibility: hidden;
-
-				transition: outline-color 0.3s 0s;
-
-				cursor: pointer;
-
-				& > span {
-					display: inline-block;
-					width: 0.75rem;
-					height: 0.75rem;
-					border-radius: 50%;
-				}
 			}
 		}
 	}
@@ -79,42 +85,12 @@
 	}
 }
 
-@keyframes animate-show-color {
-	0% {
-		transform: translateY(0.5rem);
-		opacity: 0;
-		visibility: hidden;
-	}
-
-	100% {
-		transform: translateY(0rem);
-		opacity: 1;
-		visibility: visible;
-	}
-}
-
-@keyframes animate-hide-color {
-	0% {
-		transform: translateY(0rem);
-		opacity: 1;
-		visibility: visible;
-	}
-
-	100% {
-		transform: translateY(0.5rem);
-		opacity: 0;
-		visibility: hidden;
-	}
-}
-
 .show-pallete {
 	bottom: 3rem;
 }
 
 .show-color {
-	animation: animate-show-color 0.6s forwards;
-}
-
-.hide-color {
-	animation: animate-hide-color 0.6s forwards;
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(0rem);
 }

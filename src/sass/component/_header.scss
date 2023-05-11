@@ -55,6 +55,11 @@
 	&__toggle {
 		font-size: 1.3rem;
 		cursor: pointer;
+
+		svg {
+			fill: var(--title-color);
+			transform: translateY(0.1rem);
+		}
 	}
 }
 

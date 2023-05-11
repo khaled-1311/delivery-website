@@ -1,10 +1,8 @@
-import React from 'react';
 import Section from '../UI/Section';
 import Contaienr from '../UI/Container';
-import Svg from '../UI/Svg';
-
-import '../../sass/main.scss';
 import Link from '../re-usable/Link';
+import icons from '../../img/icons.svg';
+import Svg from '../UI/Svg';
 
 const App = () => {
 	return (
@@ -21,13 +19,25 @@ const App = () => {
 					</p>
 
 					<div className="app__buttons">
-						<Link href="#" className="button-flex button__icon">
-							<i className="bx bxl-apple"></i>
+						<Link href="#" className="button__flex button__icon">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 24 24"
+								width="24"
+								height="24">
+								<use href={`${icons}#apple-store`}></use>
+							</svg>
 							<span>App Store</span>
 						</Link>
 
-						<Link href="#" className="button-flex button__icon">
-							<i className="bx bxl-play-store"></i>
+						<Link href="#" className="button__flex button__icon">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 24 24"
+								width="24"
+								height="24">
+								<use href={`${icons}#play-store`}></use>
+							</svg>
 							<span>Google Play</span>
 						</Link>
 					</div>

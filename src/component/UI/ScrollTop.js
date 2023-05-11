@@ -1,6 +1,5 @@
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import WebContext from '../store/web-context';
-import '../../sass/main.scss';
 
 const ScrollTop = props => {
 	const ctx = useContext(WebContext);

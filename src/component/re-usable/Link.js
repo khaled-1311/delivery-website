@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Link = props => {
 	const classes = `button ${props.className ? props.className : ''}`;
 	return (

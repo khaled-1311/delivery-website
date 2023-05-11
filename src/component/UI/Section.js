@@ -1,5 +1,4 @@
-import React, { useEffect, useRef } from 'react';
-import '../../sass/main.scss';
+import { useEffect, useRef } from 'react';
 
 const Section = props => {
 	const section = useRef();

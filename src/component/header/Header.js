@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import '../../sass/main.scss';
+import { useState } from 'react';
 import Nav from './Nav';
 import Link from '../re-usable/Link';
 import ToggleMenu from './ToggleMenu';

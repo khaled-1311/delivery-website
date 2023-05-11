@@ -2,10 +2,11 @@ import React, { useContext } from 'react';
 import WebContext from '../../store/web-context';
 
 import ColorItem from './ColorItem';
-import '../../../sass/main.scss';
 
 const ColorList = React.memo(() => {
 	const ctx = useContext(WebContext);
+
+	console.log(ctx.isSettingOpend);
 
 	const colorList = ctx.colors.map((color, i) => (
 		<div key={i}>
@@ -13,7 +14,14 @@ const ColorList = React.memo(() => {
 		</div>
 	));
 
-	return <div className="box-palette__colors">{colorList}</div>;
+	return (
+		<div
+			className={`box-palette__colors${
+				ctx.isSettingOpend ? ' show-color' : ''
+			}`}>
+			{colorList}
+		</div>
+	);
 });
 
 export default ColorList;

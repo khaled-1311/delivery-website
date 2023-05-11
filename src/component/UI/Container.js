@@ -1,5 +1,4 @@
 import React from 'react';
-import '../../sass/main.scss';
 
 const Contaienr = React.forwardRef((props, ref) => {
 	const classes = `${props.section}__container grid`;

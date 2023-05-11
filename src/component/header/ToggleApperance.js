@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import '../../sass/main.scss';
+import { useEffect, useState } from 'react';
 
 const ToggleApperance = props => {
 	const [isDark, setIsDark] = useState(false);
@@ -23,9 +22,15 @@ const ToggleApperance = props => {
 	const btnClasses = `theme theme__button ${isDark ? 'toggle-theme' : ''}`;
 
 	return (
-		<button type="button" className={btnClasses} onClick={toggleThemeHandler}>
-			<span className="theme__slider"></span>
-		</button>
+		<li className="nav__item">
+			<button
+				type="button"
+				className={btnClasses}
+				onClick={toggleThemeHandler}
+				aria-label="change apperance">
+				<span className="theme__slider"></span>
+			</button>
+		</li>
 	);
 };
 

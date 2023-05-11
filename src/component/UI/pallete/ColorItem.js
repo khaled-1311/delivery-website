@@ -1,7 +1,5 @@
 import React, { useContext } from 'react';
 import WebContext from '../../store/web-context';
-import '../../../sass/main.scss';
-
 const ColorItem = React.memo(props => {
 	const ctx = useContext(WebContext);
 	const color = props.data;
@@ -25,7 +23,6 @@ const ColorItem = React.memo(props => {
 		<button
 			type="button"
 			key={props.id}
-			className={ctx.isSettingOpend ? 'show-color' : 'hide-color'}
 			onClick={changeColorHandler}
 			data-color={color.name}
 			style={{

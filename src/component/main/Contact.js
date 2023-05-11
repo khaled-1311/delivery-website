@@ -1,8 +1,5 @@
-import React from 'react';
 import Section from '../UI/Section';
 import Contaienr from '../UI/Container';
-
-import '../../sass/main.scss';
 import Link from '../re-usable/Link';
 
 const Contact = () => {

@@ -1,4 +1,3 @@
-import React from 'react';
 import svg from '../../img/svg.svg';
 
 const Svg = props => {

@@ -1,10 +1,7 @@
-import React from 'react';
 import Section from '../UI/Section';
 import Contaienr from '../UI/Container';
 import Svg from '../UI/Svg';
 import Link from '../re-usable/Link';
-
-import '../../sass/main.scss';
 
 const Home = props => {
 	return (
